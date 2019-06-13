@@ -1,34 +1,34 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Máté Bálint\\Desktop\\C#\\TW WEEK\\4th TW\\MovieSite\\MovieSite\\MovieSite.csproj": {}
+    "c:\\Users\\Alina\\Desktop\\gut\\MovieSite\\MovieSite\\MovieSite.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Máté Bálint\\Desktop\\C#\\TW WEEK\\4th TW\\MovieSite\\MovieSite\\MovieSite.csproj": {
+    "c:\\Users\\Alina\\Desktop\\gut\\MovieSite\\MovieSite\\MovieSite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Máté Bálint\\Desktop\\C#\\TW WEEK\\4th TW\\MovieSite\\MovieSite\\MovieSite.csproj",
+        "projectUniqueName": "c:\\Users\\Alina\\Desktop\\gut\\MovieSite\\MovieSite\\MovieSite.csproj",
         "projectName": "MovieSite",
-        "projectPath": "C:\\Users\\Máté Bálint\\Desktop\\C#\\TW WEEK\\4th TW\\MovieSite\\MovieSite\\MovieSite.csproj",
-        "packagesPath": "C:\\Users\\Máté Bálint\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Máté Bálint\\Desktop\\C#\\TW WEEK\\4th TW\\MovieSite\\MovieSite\\obj\\",
+        "projectPath": "c:\\Users\\Alina\\Desktop\\gut\\MovieSite\\MovieSite\\MovieSite.csproj",
+        "packagesPath": "C:\\Users\\Alina\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\Alina\\Desktop\\gut\\MovieSite\\MovieSite\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Máté Bálint\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alina\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp2.1"
+          "netcoreapp2.2"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp2.1": {
+          "netcoreapp2.2": {
             "projectReferences": {}
           }
         },
@@ -39,27 +39,32 @@
         }
       },
       "frameworks": {
-        "netcoreapp2.1": {
+        "netcoreapp2.2": {
           "dependencies": {
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.1.1, )",
+              "version": "[2.2.0, )",
               "autoReferenced": true
             },
             "Microsoft.AspNetCore.Razor.Design": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.1.2, )"
+              "version": "[2.2.0, )"
             },
             "Microsoft.NETCore.App": {
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[2.1.0, )",
+              "version": "[2.2.0, )",
               "autoReferenced": true
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[2.1.9, )"
+              "version": "[2.2.3, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[2.2.4, )"
             }
           },
           "imports": [
