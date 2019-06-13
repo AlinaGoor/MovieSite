@@ -12535,23 +12535,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Alina\\.nuget\\packages\\": {},
+    "C:\\Users\\Máté Bálint\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alina\\Desktop\\gut\\MovieSite\\MovieSite.csproj",
+      "projectUniqueName": "C:\\Users\\Máté Bálint\\Desktop\\C#\\TW WEEK\\4th TW\\MovieSite\\MovieSite\\MovieSite.csproj",
       "projectName": "MovieSite",
-      "projectPath": "C:\\Users\\Alina\\Desktop\\gut\\MovieSite\\MovieSite.csproj",
-      "packagesPath": "C:\\Users\\Alina\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alina\\Desktop\\gut\\MovieSite\\obj\\",
+      "projectPath": "C:\\Users\\Máté Bálint\\Desktop\\C#\\TW WEEK\\4th TW\\MovieSite\\MovieSite\\MovieSite.csproj",
+      "packagesPath": "C:\\Users\\Máté Bálint\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Máté Bálint\\Desktop\\C#\\TW WEEK\\4th TW\\MovieSite\\MovieSite\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Alina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Máté Bálint\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
