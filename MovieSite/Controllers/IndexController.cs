@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using MovieSite.Models;
 
 namespace MovieSite.Controllers
 {
+    [Route("")]
+    [ApiController]
     public class IndexController : Controller
     {
         private readonly MovieDBContext _context;
@@ -26,7 +29,7 @@ namespace MovieSite.Controllers
             //}
         }
 
-        [Route("")]
+        
         [HttpGet]
         public ActionResult<List<Movie>> Index()
         {
@@ -34,7 +37,6 @@ namespace MovieSite.Controllers
 
         }
 
-        [Route("")]
         [HttpPost]
         public async Task<ActionResult<Movie>> PostIndex([FromBody] Movie movie)
         {
@@ -47,6 +49,32 @@ namespace MovieSite.Controllers
             await _context.SaveChangesAsync();
             return CreatedAtAction(nameof(Index), new {id = movie.Id}, movie);
         }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Movie>> GetMovie(int id)
+        {
+            var movie = await _context.Movies.FindAsync(id);
+            if (movie == null)
+            {
+                return NotFound();
+            }
+
+            return movie;
+        }
+
+        [HttpPut("{id}")]
+        public async Task<ActionResult> PutMovie(int id, Movie movie)
+        {
+            if (id != movie.Id)
+            {
+                return BadRequest();
+            }
+
+            _context.Entry(movie).State = EntityState.Modified;
+            await _context.SaveChangesAsync();
+            return NoContent();
+        }
+
     }
 }
 
