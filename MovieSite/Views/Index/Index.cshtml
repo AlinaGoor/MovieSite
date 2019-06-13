@@ -1,5 +1,5 @@
 ﻿@*@model MovieSite.Models.Movie*@
-@model IEnumerable<MovieSite.Models.Movie>
+@model List<MovieSite.Models.Movie>
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 
@@ -19,14 +19,16 @@
     @foreach (var item in Model)
     {
         <br/>
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Title)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ReleaseDate)
-            </td>
-        </tr>
+        <h4>Movie title: </h4>
+        <br/>
+
+                    @Html.DisplayFor(modelItem => item.Title)
+        <br/>
+        <h4>Movie release date: </h4>
+        <br/>
+
+                    @Html.DisplayFor(modelItem => item.ReleaseDate)
+                
         <br />
     }
     </body>
