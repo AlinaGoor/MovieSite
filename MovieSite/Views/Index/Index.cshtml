@@ -1,0 +1,33 @@
+﻿@*@model MovieSite.Models.Movie*@
+@model IEnumerable<MovieSite.Models.Movie>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    This is the index page
+
+    @foreach (var item in Model)
+    {
+        <br/>
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReleaseDate)
+            </td>
+        </tr>
+        <br />
+    }
+    </body>
+</html>
